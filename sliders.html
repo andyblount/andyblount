@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Zero - Responsive Html5 Theme</title>
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+	<div class="row">
+	<header>
+	
+		<div class="three columns">
+			<logo>
+				<a href="index.html" ><img src="images/logo.jpg" width="86" height="38"></a>
+			</logo>
+		</div>
+		
+		<div class="six columns">
+			<ul class="nav-bar">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="portfolio.html">Our Work</a></li>
+			  <li class="has-flyout">
+			    <a href="">Features</a>
+			    <a href="#" class="flyout-toggle"><span></span></a>
+			    <ul class="flyout">
+			      <li><a href="elements.html">Elements</a></li>
+			      <li><a href="columns.html">Columns</a></li>
+			      <li class="active"><a href="sliders.html">Sliders</a></li>
+			      <li><a href="media.html">Media</a></li>
+			    </ul>
+			  </li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			</ul>		
+		</div>
+		
+	</header>
+	</div>
+	
+	
+<feature>
+	<div class="row">
+		<div class="twelve columns">
+			<div class="title">Sliders</div>
+			<div class="title2">The different shortcodes elements.</div>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+	<div class="twelve columns">
+		<div id="featured">
+		  <img src="images/slider/slide1.jpg" width="970" height="437" />
+		  <img src="images/slider/slide2.jpg" width="970" height="437" />
+		  <img src="images/slider/slide3.jpg" width="970" height="437" />
+		</div>
+	</div>
+	</div>
+	
+	<div class="row">
+	<div class="line"></div>
+	<div class="twelve columns">
+		<div id="featuredContent">
+		  <div class="gray">
+		    <h4>This is a content slider.</h4>
+		    <p>Each slide holds arbitrary content, like text or actions.</p>
+		  </div>
+		  <div class="gray">
+		    <h4>We can include text and buttons, like this!</h4>
+		    <p>We take no responsibility for what happens if you click this button.</p>
+		    <p><a href="http://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button" target="_blank">Rock My World!</a></p>
+		  </div>
+		  <div class="gray">
+		    <h4>What? You didn't click it?</h4>
+		    <p>We'll give you the benefit of the doubt. Maybe you did, and now you're back!</p>
+		  </div>
+		</div>
+	</div>
+	</div>
+
+</feature>		
+			
+
+<footer>
+	<div class="row">
+	    <div class="three columns">
+	    <h3>Instagram</h3>
+	    <iframe src="http://snapwidget.com/in/?u=aW5zdGFncmFtfGlufDcwfDN8Mnx8bm98OHxmYWRlSW4=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:234px; height: 156px" ></iframe>
+	    </div>
+	    <div class="four columns">
+	    <h3>Latest Tweets</h3>
+	    <social>
+	    <div id="twitter_update_list"></div>
+	    </social>
+	    <a href="#"><p>Follow me →</p></a>
+	    <script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script>
+	    <script type="text/javascript"> 
+	    (function() {
+	       var e = document.createElement('script'); 
+	       e.type = 'text/javascript';
+	      e.async = true;
+	        e.src = 'http://twitter.com/statuses/user_timeline/twitter.json?callback=twitterCallback2&count=3';
+	       document.getElementById('twitter_update_list').appendChild(e);
+	    }());
+	    </script>
+	    </div>
+	    <div class="three columns">
+	    <h3>Mini Feature</h3>
+	    <p>You can put these mini-features in any widget ready area. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	    <a href="#" class="radius button">Button Text</a>
+	    </div>
+	    <div class="two columns">
+	    <div class="logofoot"><a href="index.html" ><img src="images/logo.jpg" width="86" height="38"></a></div>
+	    </div>
+	</div>
+	
+	<div class="row">
+	    <div class="eight columns">
+	    </div>
+	    <div class="four columns">
+			<div class="copyright">Copyright © 2012 by Zero · Design by 7silence</div>
+	    </div>
+	</footer>
+
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  
+  <script type="text/javascript"> 
+     $(window).load(function() {
+         $('#featuredContent').orbit({ fluid: '16x6' });
+     });
+  </script>
+  
+  
+</body>
+</html>

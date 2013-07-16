@@ -14,7 +14,6 @@ $(document).ready(function() {
 				//when Successfully executed
 				$('#myModal .modal-body').html(data);
 				$('#myModal').modal('show');
-				console.log('load modal content');				
 			},
 			error: function(jqXHR, textStatus, errorThrown){
 				//When Error Fires

@@ -13,7 +13,7 @@ $(document).ready(function() {
 			context: document.body,
 			success: function(data){
 				//when Successfully executed
-				$('#myModal .modal-body').hmtl(data);
+				$('#myModal .modal-body').html(data);
 				//$('#myModal').modal('show');
 				console.log('load modal content');				
 			},

@@ -11,7 +11,7 @@ $(document).ready(function() {
 		$.ajax({
 			url: remote,
 			context: document.body,
-			success: function(){
+			success: function(data){
 				//when Successfully executed
 				$('#myModal .modal-body').hmtl(data);
 				//$('#myModal').modal('show');

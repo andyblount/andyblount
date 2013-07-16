@@ -5,7 +5,6 @@ $(document).ready(function() {
 	// empty the modal when closing
 	$('.popup-links').attr('href','');
 	$('.popup-links').on('click', function(e){
-		
 		var remote = $(this).data('href');
 		
 		$.ajax({
@@ -14,7 +13,7 @@ $(document).ready(function() {
 			success: function(data){
 				//when Successfully executed
 				$('#myModal .modal-body').html(data);
-				//$('#myModal').modal('show');
+				$('#myModal').modal('show');
 				console.log('load modal content');				
 			},
 			error: function(jqXHR, textStatus, errorThrown){

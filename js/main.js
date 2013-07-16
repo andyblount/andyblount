@@ -6,14 +6,19 @@ $(document).ready(function() {
 	$('.popup-links').attr('href','');
 	$('.popup-links').on('click', function(e){
 		var remote = $(this).data('href');
-		$('#myModal .modal-body').load(remote, function(response, status, xhr){
-			if (status == "error") {
-				var msg = "Sorry but there was an error: ";
-				alert(msg + xhr.status + " " + xhr.statusText + ". Remote = " + remote);
-			}
-			else {
+		
+		$.ajax({
+			url: remote,
+			context: document.body,
+			success: function(){
+				//when Successfully executed
+				$('#myModal .modal-body').hmtl(data);
 				//$('#myModal').modal('show');
-				console.log('load modal content');
+				console.log('load modal content');				
+			},
+			error: function(){
+				//When Error Fires
+				console.log('error ', error);
 			}
 		});
 	});

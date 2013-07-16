@@ -5,6 +5,7 @@ $(document).ready(function() {
 	// empty the modal when closing
 	$('.popup-links').attr('href','');
 	$('.popup-links').on('click', function(e){
+		
 		var remote = $(this).data('href');
 		
 		$.ajax({
@@ -16,10 +17,11 @@ $(document).ready(function() {
 				//$('#myModal').modal('show');
 				console.log('load modal content');				
 			},
-			error: function(){
+			error: function(jqXHR, textStatus, errorThrown){
 				//When Error Fires
-				console.log('error ', error);
+				console.log('error ', jqXHR, ' ', textStatus, ' ', errorThrown);
 			}
 		});
+		return false;
 	});
 });

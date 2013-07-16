@@ -13,6 +13,7 @@ $(document).ready(function() {
 			}
 			else {
 				//$('#myModal').modal('show');
+				console.log('load modal content');
 			}
 		});
 	});
